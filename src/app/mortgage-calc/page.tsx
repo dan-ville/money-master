@@ -282,7 +282,7 @@ export default function MortgageCalculator() {
                       onClick={() => setShowStates(true)}
                       className="self-end text-muted-foreground"
                     >
-                      Help me find this?
+                      What is my property tax?
                     </Button>
                   </FormItem>
                 )}
