@@ -103,7 +103,6 @@ export default function MortgageCalculator() {
     mode: "onChange",
   })
 
-
   return (
     <Form {...form}>
       <div className="max-w-3xl my-6 mx-auto">
@@ -276,14 +275,16 @@ export default function MortgageCalculator() {
                     )}
                   />
                 ) : (
-                  <Button
-                    variant="ghost"
-                    type="button"
-                    onClick={() => setShowStates(true)}
-                    className="self-end text-muted-foreground"
-                  >
-                    Help me find this?
-                  </Button>
+                  <FormItem>
+                    <Button
+                      variant="ghost"
+                      type="button"
+                      onClick={() => setShowStates(true)}
+                      className="self-end text-muted-foreground"
+                    >
+                      Help me find this?
+                    </Button>
+                  </FormItem>
                 )}
               </div>
             </form>
